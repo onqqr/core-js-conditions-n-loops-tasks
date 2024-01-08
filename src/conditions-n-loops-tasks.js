@@ -141,8 +141,12 @@ function convertNumberToString(/* numberStr */) {
  *  '0123210'   => true
  *  'qweqwe'    => false
  */
-function isPalindrome(/* str */) {
-  throw new Error('Not implemented');
+function isPalindrome(str) {
+  let strCont = '';
+  for (let i = str.length - 1; i >= 0; i -= 1) {
+    strCont += str[i];
+  }
+  return str === strCont;
 }
 
 /**
@@ -257,7 +261,7 @@ function rotateMatrix(/* matrix */) {
  *  [2, 9, 5, 9]    => [2, 5, 9, 9]
  *  [-2, 9, 5, -3]  => [-3, -2, 5, 9]
  */
-function sortByAsc(/* arr */) {
+function sortByAsc() {
   throw new Error('Not implemented');
 }
 
